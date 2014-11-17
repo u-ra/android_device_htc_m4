@@ -1610,18 +1610,6 @@ SectionDevice
 EndSection
 
 SectionDevice
-	Name "QMIC"
-
-	EnableSequence
-	EndSequence
-
-	DisableSequence
-	EndSequence
-
-	ACDBID  0:0
-EndSection
-
-SectionDevice
 	Name "Speaker"
 
 	EnableSequence
@@ -1760,18 +1748,6 @@ SectionDevice
 	EndSequence
 
 	ACDBID  603:1
-EndSection
-
-SectionDevice
-	Name "SSR QMIC"
-
-	EnableSequence
-	EndSequence
-
-	DisableSequence
-	EndSequence
-
-	ACDBID  0:0
 EndSection
 
 SectionDevice
@@ -2429,20 +2405,6 @@ SectionModifier
 EndSection
 
 SectionModifier
-	Name "Capture MusicQMIC"
-
-	EnableSequence
-		'MultiMedia1 Mixer SLIM_0_TX':1:1
-	EndSequence
-
-	DisableSequence
-		'MultiMedia1 Mixer SLIM_0_TX':1:0
-	EndSequence
-	CapturePCM  0
-	PlaybackPCM  0
-EndSection
-
-SectionModifier
 	Name "Capture MusicSecondMic"
 
 	EnableSequence
@@ -2639,20 +2601,6 @@ SectionModifier
 EndSection
 
 SectionModifier
-	Name "Capture MusicSSR QMIC"
-
-	EnableSequence
-		'MultiMedia1 Mixer SLIM_0_TX':1:1
-	EndSequence
-
-	DisableSequence
-		'MultiMedia1 Mixer SLIM_0_TX':1:0
-	EndSequence
-	CapturePCM  0
-	PlaybackPCM  0
-EndSection
-
-SectionModifier
 	Name "Capture MusicSpeaker FM"
 
 	EnableSequence
@@ -2771,20 +2719,6 @@ SectionModifier
 	EndSequence
 
 	DisableSequence
-	EndSequence
-	CapturePCM  0
-	PlaybackPCM  0
-EndSection
-
-SectionModifier
-	Name "Play MusicQMIC"
-
-	EnableSequence
-		'SLIMBUS_0_RX Audio Mixer MultiMedia1':1:1
-	EndSequence
-
-	DisableSequence
-		'SLIMBUS_0_RX Audio Mixer MultiMedia1':1:0
 	EndSequence
 	CapturePCM  0
 	PlaybackPCM  0
@@ -2983,20 +2917,6 @@ SectionModifier
 
 	DisableSequence
 		'MI2S_RX Audio Mixer MultiMedia1':1:0
-	EndSequence
-	CapturePCM  0
-	PlaybackPCM  0
-EndSection
-
-SectionModifier
-	Name "Play MusicSSR QMIC"
-
-	EnableSequence
-		'SLIMBUS_0_RX Audio Mixer MultiMedia1':1:1
-	EndSequence
-
-	DisableSequence
-		'SLIMBUS_0_RX Audio Mixer MultiMedia1':1:0
 	EndSequence
 	CapturePCM  0
 	PlaybackPCM  0
